@@ -9,7 +9,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: []
+      departureStation: "Departure",
+      arrivalStation: "Arrival",
+
     }
   }
   //
@@ -30,7 +32,8 @@ class App extends React.Component {
    render () {
     return (<div>
       <h1><center>The Combi App</center></h1>
-      <BoxDropDown />
+      <BoxDropDown name={this.state.departureStation} />
+      <BoxDropDown name={this.state.arrivalStation} />
     </div>)
 
   }

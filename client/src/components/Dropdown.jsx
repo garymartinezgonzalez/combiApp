@@ -21,12 +21,12 @@ class BoxDropDown extends Component {
    return (
      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
        <DropdownToggle caret>
-        Stations
+        {this.props.name}
        </DropdownToggle>
        <DropdownMenu>
-         <DropdownItem header>Header</DropdownItem>
-         <DropdownItem disabled>Action</DropdownItem>
-         <DropdownItem>Another Action</DropdownItem>
+         <DropdownItem header>Indios Verdes</DropdownItem>
+         <DropdownItem disabled>San Rafael</DropdownItem>
+         <DropdownItem>Ciudad Azteca</DropdownItem>
          <DropdownItem divider />
          <DropdownItem>Another Action</DropdownItem>
        </DropdownMenu>
