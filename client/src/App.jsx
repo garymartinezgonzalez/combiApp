@@ -4,6 +4,7 @@ import { hot } from 'react-hot-loader';
 
 class App extends Component {
   render() {
+    console.log("hey")
     return <div>Welcome to a Modern Minimal React Boilerplate</div>;
   }
 }
