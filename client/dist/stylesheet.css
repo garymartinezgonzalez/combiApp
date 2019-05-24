@@ -1,18 +1,4 @@
-/* .grid-container {
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-  border-width: 5px;
-  border-color: red;
-}
-h1 {
-  text-align: center;
-  color: blue;
-}
-.mapSize{
-  width= 600px;
-  height= 450px;
-} */
+
 .responsive-map-container {
     position: relative;
     padding-bottom: 56.25%;
