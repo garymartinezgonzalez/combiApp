@@ -20,7 +20,7 @@ class App extends React.Component {
    render () {
     return (
      <div>
-      <h1><center>The Combi App</center></h1>
+      <h1><center>Combi Pay & GO </center></h1>
        <div>
         <BoxDropDown name={this.state.departureStation} />
        <div>

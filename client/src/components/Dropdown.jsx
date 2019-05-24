@@ -24,10 +24,10 @@ class BoxDropDown extends Component {
         {this.props.name}
        </DropdownToggle>
        <DropdownMenu>
-         <DropdownItem header>Indios Verdes</DropdownItem>
-         <DropdownItem disabled>San Rafael</DropdownItem>
+         <DropdownItem>Indios Verdes</DropdownItem>
+         <DropdownItem>San Rafael</DropdownItem>
          <DropdownItem>Ciudad Azteca</DropdownItem>
-         <DropdownItem divider />
+         <DropdownItem/>
          <DropdownItem>Another Action</DropdownItem>
        </DropdownMenu>
      </ButtonDropdown>
