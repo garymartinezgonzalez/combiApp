@@ -17,15 +17,28 @@ class App extends React.Component {
     }
   }
 
+
+
    render () {
     return (
      <div>
       <h1><center>Combi Pay & GO </center></h1>
        <div>
         <BoxDropDown name={this.state.departureStation} />
+
+        <div class="row">
+           <div class="col s1"></div>
+           <div class="col s1"></div>
+        </div>
+
        <div>
-         <BoxDropDown name={this.state.arrivalStation} />
+        <BoxDropDown name={this.state.arrivalStation} />
        </div>
+
+       <div class="row">
+          <div class="col s1"></div>
+          <div class="col s1"></div>
+      </div>
 
       </div>
          <div>
@@ -33,6 +46,7 @@ class App extends React.Component {
            <i class="material-icons right"></i>
           </button>
        </div>
+
 
     </div>)
 
