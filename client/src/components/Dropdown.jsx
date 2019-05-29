@@ -22,6 +22,7 @@ class BoxDropDown extends Component {
 
  render() {
    return (
+     
      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
        <DropdownToggle caret>
         {this.props.name}
