@@ -7,7 +7,20 @@ import PropTypes from 'prop-types';
 class BoxDropDown extends Component {
   constructor(props) {
    super(props);
+   this.gary= "hey",
+   this.combiData = [
+     {
 
+       route: "Indios Verdes",
+       stops:[
+         "El Angel",
+         "Hamburgo",
+         "Paris",
+         "El Caballito",
+         "Gloriteta Violeta",
+       ]
+     }
+   ];
    this.toggle = this.toggle.bind(this);
    this.state = {
      dropdownOpen: false
@@ -22,17 +35,14 @@ class BoxDropDown extends Component {
 
  render() {
    return (
-     
      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
        <DropdownToggle caret>
         {this.props.name}
        </DropdownToggle>
        <DropdownMenu>
-         <DropdownItem>Indios Verdes</DropdownItem>
-         <DropdownItem>San Rafael</DropdownItem>
-         <DropdownItem>Ciudad Azteca</DropdownItem>
-         <DropdownItem/>
-         <DropdownItem>Another Action</DropdownItem>
+         <DropdownItem onClick={()=>this.props.updateRouteName("Indios Verdes")}> Indios Verdes </DropdownItem>
+         <DropdownItem onClick={()=>this.props.updateRouteName("San Rafael")}> San Rafael </DropdownItem>
+         <DropdownItem onClick={()=>this.props.updateRouteName("Ciudad Azteca")}> Ciudad Azteca </DropdownItem>
        </DropdownMenu>
      </ButtonDropdown>
    );
@@ -45,7 +55,9 @@ ButtonDropdown.propTypes = {
   group: PropTypes.bool,
   isOpen: PropTypes.bool,
   tag: PropTypes.string,
-  toggle: PropTypes.func
+  toggle: PropTypes.func,
+  route: PropTypes.string,
+  stops: PropTypes.string
 };
 
 DropdownToggle.propTypes = {

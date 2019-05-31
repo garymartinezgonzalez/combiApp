@@ -14,25 +14,30 @@ class App extends React.Component {
       departureStation: "Departure",
       arrivalStation: "Arrival",
 
-    }
+
+
+   }
+   this.updateStation = this.updateStation.bind(this)
   }
-
-
+  updateStation (station) {
+    console.log("gary",station)
+    this.setState({departureStation: station})
+  }
 
    render () {
     return (
      <div>
 
-      <h1><center>Combi Pay & GO </center></h1>
+      <h1><center>Combi Pay & GO</center></h1>
       <div class="row">
         <div class="col s4">
          <div>
-          <BoxDropDown name={this.state.departureStation} />
+          <BoxDropDown name={this.state.departureStation} updateRouteName={this.updateStation} />
         </div>
         </div>
         <div class="col s4">
           <div>
-            <BoxDropDown name={this.state.arrivalStation} />
+            <BoxDropDown name={this.state.arrivalStation} stopName={this.props.combiData} />
           </div>
         </div>
         <div class="col s4">
