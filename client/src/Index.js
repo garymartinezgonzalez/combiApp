@@ -5,7 +5,7 @@ import BoxDropDown from './components/Dropdown.jsx';
 import { Button } from 'reactstrap';
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
-
+import combiData from './Data.js'
 
 class App extends React.Component {
   constructor(props) {
@@ -13,38 +13,40 @@ class App extends React.Component {
     this.state = {
       departureStation: "Departure",
       arrivalStation: "Arrival",
-
-
-
+      stops: [],
    }
+   this.combiData = combiData
    this.updateStation = this.updateStation.bind(this)
+   this.updateArrival = this.updateArrival.bind(this)
   }
   updateStation (station) {
-    console.log("gary",station)
-    this.setState({departureStation: station})
+    this.setState({departureStation: station.direction,stops:station.stops})
   }
 
+  updateArrival (station) {
+    this.setState({arrivalStation: station.direction})
+  }
    render () {
     return (
      <div>
 
       <h1><center>Combi Pay & GO</center></h1>
-      <div class="row">
-        <div class="col s4">
+      <div className="row">
+        <div className="col s4">
          <div>
-          <BoxDropDown name={this.state.departureStation} updateRouteName={this.updateStation} />
+          <BoxDropDown name={this.state.departureStation} updateRouteName={this.updateStation} stations={this.combiData} />
         </div>
         </div>
-        <div class="col s4">
+        <div className="col s4">
           <div>
-            <BoxDropDown name={this.state.arrivalStation} stopName={this.props.combiData} />
+            <BoxDropDown name={this.state.arrivalStation} updateRouteName={this.updateArrival} stations={this.state.stops} />
           </div>
         </div>
-        <div class="col s4">
+        <div className="col s4">
           <div>
           <div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right"></i>
+            <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i className="material-icons right"></i>
             </button>
           </div>
 

@@ -8,19 +8,9 @@ class BoxDropDown extends Component {
   constructor(props) {
    super(props);
    this.gary= "hey",
-   this.combiData = [
-     {
 
-       route: "Indios Verdes",
-       stops:[
-         "El Angel",
-         "Hamburgo",
-         "Paris",
-         "El Caballito",
-         "Gloriteta Violeta",
-       ]
-     }
-   ];
+
+
    this.toggle = this.toggle.bind(this);
    this.state = {
      dropdownOpen: false
@@ -40,9 +30,10 @@ class BoxDropDown extends Component {
         {this.props.name}
        </DropdownToggle>
        <DropdownMenu>
-         <DropdownItem onClick={()=>this.props.updateRouteName("Indios Verdes")}> Indios Verdes </DropdownItem>
-         <DropdownItem onClick={()=>this.props.updateRouteName("San Rafael")}> San Rafael </DropdownItem>
-         <DropdownItem onClick={()=>this.props.updateRouteName("Ciudad Azteca")}> Ciudad Azteca </DropdownItem>
+       {this.props.stations.map(station=>{
+        return <DropdownItem key={station.direction} onClick={()=>this.props.updateRouteName(station)}> {station.direction} </DropdownItem>
+       })}
+
        </DropdownMenu>
      </ButtonDropdown>
    );

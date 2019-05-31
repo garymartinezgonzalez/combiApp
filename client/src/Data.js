@@ -1,33 +1,33 @@
 var combiData = [
   {
 
-    route: "Indios Verdes",
+    direction: "Indios Verdes",
     stops:[
-      "El Angel",
-      "Hamburgo",
-      "Paris",
-      "El Caballito",
-      "Gloriteta Violeta",
+      {direction: "El Angel"},
+      {direction: "Hamburgo"},
+      {direction: "Paris"},
+      {direction: "El Caballito"},
+      {direction: "Gloriteta Violeta"},
     ]
   },
 
   {
-    route: "San Rafael",
+    direction: "San Rafael",
     stops: [
-       "La Diana",
-       "El Angel",
-       "La Palma",
+      {direction:  "La Diana"},
+      {direction:  "El Angel"},
+      {direction:  "La Palma"},
      ]
 
   },
 
   {
-    route: "Ciudad Azteca",
+    direction: "Ciudad Azteca",
     stops:[
-      "la Diana",
-      "Reforma",
-      "Glorieta de Colon",
-      "Gloriteta Violeta",
+      {direction: "la Diana"},
+      {direction: "Reforma"},
+      {direction: "Glorieta de Colon"},
+      {direction: "Gloriteta Violeta"},
     ]
   }
 ];
