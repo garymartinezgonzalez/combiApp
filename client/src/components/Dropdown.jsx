@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 class BoxDropDown extends Component {
   constructor(props) {
    super(props);
-   this.gary= "hey",
+  
 
 
 

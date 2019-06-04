@@ -6,6 +6,8 @@ import { Button } from 'reactstrap';
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
 import combiData from './Data.js'
+import BackGround from "./components/backgroundImage.jsx";
+import PaypalButton from "./components/PaypalButton.jsx"
 
 class App extends React.Component {
   constructor(props) {
@@ -48,6 +50,7 @@ class App extends React.Component {
             <button className="btn waves-effect waves-light" type="submit" name="action">Submit
               <i className="material-icons right"></i>
             </button>
+            <PaypalButton/>
           </div>
 
           </div>
