@@ -3,20 +3,22 @@ var combiData = [
 
     direction: "Indios Verdes",
     stops:[
-      {direction: "El Angel"},
-      {direction: "Hamburgo"},
-      {direction: "Paris"},
-      {direction: "El Caballito"},
-      {direction: "Gloriteta Violeta"},
+      {direction: "El Angel",price: 10},
+      {direction: "Hamburgo",price: 10},
+      {direction: "Paris",price: 10},
+      {direction: "El Caballito",price: 10},
+      {direction: "Gloriteta Violeta",price: 12},
     ]
+
+
   },
 
   {
     direction: "San Rafael",
     stops: [
-      {direction:  "La Diana"},
-      {direction:  "El Angel"},
-      {direction:  "La Palma"},
+      {direction:  "La Diana",price: 10},
+      {direction:  "El Angel",price: 10},
+      {direction:  "La Palma",price: 12},
      ]
 
   },
@@ -24,10 +26,10 @@ var combiData = [
   {
     direction: "Ciudad Azteca",
     stops:[
-      {direction: "la Diana"},
-      {direction: "Reforma"},
-      {direction: "Glorieta de Colon"},
-      {direction: "Gloriteta Violeta"},
+      {direction: "la Diana",price: 10},
+      {direction: "Reforma",price: 10},
+      {direction: "Glorieta de Colon",price: 10},
+      {direction: "Gloriteta Violeta",price: 12},
     ]
   }
 ];

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 // RHL only for front end development
 import { hot } from 'react-hot-loader';
 
-class App extends Component {
+class App extends React.Component {
+
   render() {
-    console.log("hey")
     return <div>Welcome to a Modern Minimal React Boilerplate</div>;
   }
 }
