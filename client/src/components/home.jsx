@@ -49,10 +49,11 @@ class Home extends React.Component {
         <div className="col s4">
           <div>
           <div>
+
           <Link  to={{
-    pathname: '/payments',
-    state: { message: this.state.price }
-  }}  >
+            pathname: '/payments',
+            state: { message: this.state.price }
+          }}  >
           <button className="btn waves-effect waves-light" type="submit" name="action">Submit
             <i className="material-icons right"></i>
           </button>
@@ -62,7 +63,7 @@ class Home extends React.Component {
           </div>
         </div>
       </div>
-    
+
     </div>)
 
   }

@@ -11,10 +11,11 @@ class Payments extends React.Component {
  render() {
 
    return (
-    <div><h1>Payments</h1>
     <div>
+      <h1><center>Payments</center></h1>
+     <div>
       <Amount price={this.props.location.state.message}/>
-    </div>
+     </div>
     </div>
    );
  }

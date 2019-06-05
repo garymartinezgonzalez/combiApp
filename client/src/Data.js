@@ -20,7 +20,6 @@ var combiData = [
       {direction:  "El Angel",price: 10},
       {direction:  "La Palma",price: 12},
      ]
-
   },
 
   {
@@ -29,7 +28,7 @@ var combiData = [
       {direction: "la Diana",price: 10},
       {direction: "Reforma",price: 10},
       {direction: "Glorieta de Colon",price: 10},
-      {direction: "Gloriteta Violeta",price: 12},
+      {direction: "Gloriteta Violeta",price: 10},
     ]
   }
 ];

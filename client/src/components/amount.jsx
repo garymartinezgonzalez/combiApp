@@ -4,10 +4,14 @@ import PaypalButton from "./PaypalButton.jsx"
 
 const Amount = (props) => (
   <div>
-    <h1>Trip Total</h1>
-    <div>
+    <h2><center>Trip Total</center></h2>
+   <div>
+    <h2>
+     <center>
       {props.price}
-    </div>
+     </center>
+    </h2> 
+   </div>
     <div>
       <PaypalButton/>
     </div>
