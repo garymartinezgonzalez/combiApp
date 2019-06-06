@@ -61,8 +61,15 @@ class Home extends React.Component {
 
           </div>
           </div>
+
+
         </div>
       </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d681425.3249357534!2d-99.42564335639938!3d19.35275023760555!3m2!1i1024!2i768!4f13.1!2m1!1sestaciones+de+combis+en+el+estado+de+mexico!5e0!3m2!1sen!2smx!4v1558457660696!5m2!1sen!2smx" width={'1250'} height={'500'} frameBorder={'0'}  allowFullScreen></iframe>
+
+
+
 
     </div>)
 
